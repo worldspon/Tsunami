@@ -1,0 +1,70 @@
+a {text-decoration: none; color:black;}
+a:hover {text-decoration: none; color:black;}
+.row {
+    padding:0;
+    margin:0;
+}
+
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+}
+
+.outer-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+.header {
+    background-color: red;
+}
+
+
+.logo-box, .user-box {
+    display:flex;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+.logo-box img {
+    align-self: center;
+    width:150px;
+}
+
+.user-box {
+    align-items: center;
+}
+
+.user-span {
+    display: block;
+}
+
+
+.side-nav {
+    position: relative;
+    height: 100vh;
+    padding: 20px 0px;
+    text-align: center;
+    background-color:blue;
+}
+
+
+.side-nav-item {
+    display: inline-block;
+    width:100%;
+    font-size : 1.8rem;
+    line-height: 1.5;
+}
+
+.side-nav-item li {
+    line-height: 1.8;
+}
+
+.main-box {
+    padding:20px;
+}

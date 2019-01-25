@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/notice.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="container-fluid outer-container">
+    <div class="row header">
+        <div class='col-lg-2 logo-box'>
+            <img src="image/logo.png" alt="">
+        </div>
+        <div class='col-lg-8'>
+        </div>
+        <div class='col-lg-2 user-box' >
+            <span class="user-span">Manager</span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-2 side-nav">
+            <ul class='side-nav-menu'>
+                <a href="#" class="side-nav-item"><li>공지사항</li></a>
+                <a href="#" class="side-nav-item"><li>1:1 문의</li></a>
+            </ul>
+        </div>
+        <div class="col-10 main-box">
+        <!--NOTICE START--> 
+            <div class='row'>
+                <!--NOTICE TITLE-->
+                <div class='col-12 notice-title'>
+                    <h1>공지사항</h1>
+                    <ul>
+                        <li>
+                            <a href="">전체</a>
+                        </li>
+                        <li>
+                            <a href="">공지</a>
+                        </li>
+                        <li>
+                            <a href="">점검</a>
+                        </li>
+                        <li>
+                            <a href="">패치</a>
+                        </li>
+                    </ul>
+                    <div class='confirm-box'>
+                        <a href='#' class='notice-true-btn notice-btn'>확인</a>
+                        <a href='#' class='notice-false-btn notice-btn'>취소</a>
+                    </div>
+                    <a href='#' class='notice-del-btn notice-btn'>삭제</a>
+                </div>
+                <!--NOTICE TITLE-->
+                <!--NOTICE CONTENT TITLE-->
+                <div class='col-12 notice-table-title'>
+                    <div class="row">
+                        <div class='col-10'>제목</div>
+                        <div class='col-2'>작성일</div>
+                    </div>
+                </div>
+                <!--NOTICE CONTENT TITLE-->
+                <!--NOTICE CONTENT-->
+                <div class='col-12 notice-table-content'>
+                    <div class="row">
+                        <div class='col-10 notice-table-l'>
+                            <input type="checkbox" class='notice-del-chk'>
+                            <div>
+                                <div class="preface">
+                                    <span class='notice-category'>공지</span>
+                                    <span class='notice-num'>No. 1234567</span>
+                                </div>
+                                <a href="" class='content-title'>1/31(목) 캐릭터 밸런스 및 대전 개편사항 사전 안내</a>
+                            </div>
+                        </div>
+                        <div class='col-2' class='notice-date' style="display:flex; justify-content: center;">
+                            <span class='date-span' style="align-self:center;">2018-01-01</span>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-12 notice-table-content'>
+                    <div class="row">
+                        <div class='col-10 notice-table-l'>
+                            <input type="checkbox" class='notice-del-chk'>
+                            <div>
+                                <div class="preface">
+                                    <span class='notice-category'>공지</span>
+                                    <span class='notice-num'>No. 1234567</span>
+                                </div>
+                                <a href="" class='content-title'>1/31(목) 캐릭터 밸런스 및 대전 개편사항 사전 안내</a>
+                            </div>
+                        </div>
+                        <div class='col-2' class='notice-date' style="display:flex; justify-content: center;">
+                            <span class='date-span' style="align-self:center;">2018-01-01</span>
+                        </div>
+                    </div>
+                </div>
+                <!--NOTICE CONTENT-->
+            </div>     
+            <a href='notice_write.html' class='write-btn'>글쓰기</a>
+            <!--NOTICE END--> 
+        </div>
+    </div>
+</div>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
