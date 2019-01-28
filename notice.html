@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/notice.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
         <div class='col-lg-8'>
         </div>
         <div class='col-lg-2 user-box' >
-            <span class="user-span">Manager</span>
+            <span class="user-span">WS Manager</span>
         </div>
     </div>
 
@@ -75,7 +76,7 @@
                                     <span class='notice-category'>공지</span>
                                     <span class='notice-num'>No. 1234567</span>
                                 </div>
-                                <a href="" class='content-title'>1/31(목) 캐릭터 밸런스 및 대전 개편사항 사전 안내</a>
+                                <a href="notice_table.html" class='content-title'>1/31(목) 캐릭터 밸런스 및 대전 개편사항 사전 안내</a>
                             </div>
                         </div>
                         <div class='col-2' class='notice-date' style="display:flex; justify-content: center;">
@@ -101,8 +102,36 @@
                     </div>
                 </div>
                 <!--NOTICE CONTENT-->
-            </div>     
-            <a href='notice_write.html' class='write-btn'>글쓰기</a>
+            </div>
+            <div class='col-12 notice-page-box'>
+                <ul class='notice-page-list'>
+                    <li><img src="image/first.png" alt=""></li>
+                    <li><img src="image/prev.png" alt=""></li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li><img src="image/next.png" alt=""></li>
+                    <li><img src="image/last.png" alt=""></li>
+                </ul>
+                <a href='notice_write.html' class='notice-write-btn'>글쓰기</a>
+            </div>
+
+            <div class="col-12 notice-serch-box-wrap">
+                <div class='notice-serch-box'>
+                    <form action="">
+                        <select style="height:30px; padding:0 10px;">
+                            <option value="제목">제목</option>
+                            <option value="내용">내용</option>
+                        </select>
+                        <input type="text" style="width:250px;">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
             <!--NOTICE END--> 
         </div>
     </div>

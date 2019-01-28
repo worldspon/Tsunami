@@ -11,7 +11,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote-bs4.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote-bs4.js"></script>
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/notice_write.css">
+    <link rel="stylesheet" href="css/notice_table.css">
     <title>Document</title>
 </head>
 <body>
@@ -22,7 +22,7 @@
         </div>
         <div class='col-lg-8'>
         </div>
-        <div class='col-lg-2 user-box' >
+        <div class='col-lg-2 user-box'>
             <span class="user-span">Manager</span>
         </div>
     </div>
@@ -34,35 +34,43 @@
                 <a href="help.html" class="side-nav-item"><li>1:1 문의</li></a>
             </ul>
         </div>
-        <div class="col-10 main-box">
+        <div class='col-10 main-box'>
         <!--NOTICE START--> 
             <div class='row'>
-                <div class='col-12 notice-write-title'>
+                <div class='col-12 notice-table-title'>
                     <h1>공지사항</h1>
+                    <div class='notice-table-title-btn-box'>
+                        <a href='notice_mod.html' class='notice-table-mod-btn notice-table-btn'>수정</a>
+                        <a href='#' class='notice-table-del-btn notice-table-btn'>삭제</a>
+                        <a href='notice.html' class='notice-table-list-btn notice-table-btn'>목록</a>
+                    </div>
                 </div>
             </div>
             <div class='row'>
-                <div class="col-12 notice-write-box">
-                    <div class='notice-title-write-box'>
-                        <select name="" id="">
-                            <option value="공지사항">공지사항</option>
-                            <option value="이벤트">이벤트</option>
-                            <option value="업데이트">업데이트</option>
-                        </select>
-                        <div contenteditable="true" placeholder="제목" class='single-line'></div>
+                <div class='col-12 notice-table-inner-title'>
+                    <div class='row'>
+                        <div class='col-9'>
+                            <span class='notice-table-inner-prefix'>[공지사항]</span>
+                            <span class='notice-table-inner-title-content'>1/28(월) 불법 프로그램 사용자 조치 안내</span>
+                        </div>
+                        <div class='col-3'>
+                            <span class='notice-table-inner-id'>관리자</span>
+                            <span class='notice-table-inner-date'>2018-01-03</span>
+                        </div>
                     </div>
                 </div>
-                <div id='summernote' class='col-12'></div>
-            </div> 
-            <div class='col-12 notice-write-confirm-box'>
-                <a href='notice.html' class='notice-write-false'>취소</a>
-                <a href='#' class='notice-write-true'>확인</a>
+                <div class='col-12 notice-table-inner-content'>
+                    불법프로그램 나빠요.<br>
+                </div>
             </div>
+            <div class='col-12 notice-table-bottom-btn-box'>
+                <a href='notice.html' class='notice-table-btn'>목록</a>
+            </div>
+            
         <!--NOTICE END--> 
         </div>
     </div>
 </div>
-    <script src="js/common.js"></script>
     <script src="js/bootstrap.js"></script>
     <script>
         $('#summernote').summernote({
@@ -72,5 +80,6 @@
             height: 800
         });
     </script>
+    <script src="js/common.js"></script>
 </body>
 </html>

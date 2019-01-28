@@ -18,13 +18,13 @@ input[type=checkbox]
     max-width: 1440px;
     margin: 0 auto;
     padding-right: 0;
-    box-shadow: 5px 0px 5px #ccc;
+
 }
 
 
 .header {
-    border-bottom: 2px solid #ccc;
-    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    
 }
 
 
@@ -51,12 +51,34 @@ input[type=checkbox]
 
 .side-nav {
     position: relative;
-    padding: 20px 0px;
     height:auto;
     text-align: center;
     background-color: #eee;
-    border-left: 1px solid #ccc;
 }
+
+
+.side-nav-menu {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.side-nav-menu a {
+    display: block;
+}
+
+
+.side-nav-menu a:not(:last-child) li::after {
+    content: '';
+    display: block;
+    width: 60%;
+    margin: 20px auto;
+    height:2px;
+    background-color:#ccc;
+}
+/* .side-nav-menu a:last-child {
+    border-top: 1px solid #bbb;
+} */
+
 
 
 .side-nav-item {
@@ -66,9 +88,6 @@ input[type=checkbox]
     line-height: 1.5;
 }
 
-.side-nav-item li {
-    line-height: 1.8;
-}
 
 .main-box {
     padding:20px;

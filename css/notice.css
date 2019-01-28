@@ -29,18 +29,22 @@
     display: inline-block;
 }
 
+.notice-title ul {
+    margin-left: 15px;
+}
+
 .notice-title ul li {
     float: left;
     margin-bottom: -5px;
 }
 
 
-.notice-title ul li::after {
+.notice-title ul li:not(:last-child)::after {
     float: right;
     content: '';
     width: 1px;
     height: 12px;
-    margin: 11px 4px 0 9px;
+    margin: 7px 10px 0 10px;
     background: #989898;
 }
 
@@ -130,23 +134,60 @@
     color:#888;
 }
 
-.write-btn {
-    display: inline;
-    float:right;
-    margin-top: 10px;
-    padding: 5px 10px;
+
+.notice-page-box {
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.notice-page-list {
+    margin: 0 auto;
+}
+
+.notice-page-list > li {
+    display: inline-block;
+    width: 50px;
+    font-size: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.notice-page-list img {
+    width: 30px;
+}
+
+
+.notice-write-btn {
+    display: inline-block;
+    position: absolute;
+    border-radius: 5px;
+    right:0;
+    padding: 10px 15px;
+    color:black;
+    font-weight: bold;
     background-color:#eee;
+}
+
+.notice-serch-box-wrap {
+    display:flex;
+    justify-content: center;
+}
+
+.notice-serch-box {
+    display: block;
 }
 
 
 
-.write-box {
+.notice-write-box {
     padding:0;
     border: 1px solid #eee;
 }
 
 
-.title-write-box {
+.notice-title-write-box {
     display:flex;
     align-items:center;
     height:50px;
@@ -167,30 +208,17 @@
     color: #555; 
 }
 
-.pannel-box {
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-    background-color:#f8f8f8;
-    height:30px;
+.write-confirm-box {
+    margin-top: 20px;
+    text-align: right;
 }
 
-.pannel-box select {
-    width:83px;
-    background-color:inherit;
-    border:none;
-}
-
-.pannel-box button {
+.write-confirm-box a{
     display: inline-block;
-    margin:0; padding:0;
-    background-color: inherit;
-    width:30px;
-    height:30px;
-    border:none;
-}
-
-.content-write-box {
-    padding:10px;
-    height: 800px;
+    border-radius: 5px;
+    right:0;
+    padding: 10px 15px;
+    color:black;
+    font-weight: bold;
+    background-color:#eee;
 }
