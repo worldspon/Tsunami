@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/help.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="container-fluid outer-container">
+    <div class="row header">
+        <div class='col-lg-2 logo-box'>
+            <img src="image/logo.png" alt="">
+        </div>
+        <div class='col-lg-8'>
+        </div>
+        <div class='col-lg-2 user-box' >
+            <span class="user-span">Manager</span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-2 side-nav">
+            <ul class='side-nav-menu'>
+                <a href="notice.html" class="side-nav-item"><li>공지사항</li></a>
+                <a href='help.html' class="side-nav-item"><li>1:1 문의</li></a>
+            </ul>
+        </div>
+        <div class="col-10 main-box">
+        <!--NOTICE START--> 
+            <div class='row'>
+                <!--NOTICE TITLE-->
+                <div class='col-12 help-title'>
+                    <h1>1:1 문의</h1>
+                    <ul>
+                        <li>
+                            <a href="">전체</a>
+                        </li>
+                        <li>
+                            <a href="">앱기능</a>
+                        </li>
+                        <li>
+                            <a href="">거래소</a>
+                        </li>
+                        <li>
+                            <a href="">게임존</a>
+                        </li>
+                        <li>
+                            <a href="">기타</a>
+                        </li>
+                    </ul>
+                    <div class='serch-box'>
+                        <form action="">
+                            <select style="height:30px;">
+                                <option value="제목">제목</option>
+                                <option value="아이디">아이디</option>
+                                <option value="상담번호">상담번호</option>
+                                <option value="상담분류">상담분류</option>
+                            </select>
+                            <input type="text">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <!--NOTICE TITLE-->
+                <!--NOTICE CONTENT TITLE-->
+                <div class='col-12 help-table-title'>
+                    <div class="row">
+                        <div class='col-6'>제목</div>
+                        <div class='col-2'>아이디</div>
+                        <div class='col-2'>작성일</div>
+                        <div class='col-2'>답변여부</div>
+                    </div>
+                </div>
+                <!--NOTICE CONTENT TITLE-->
+                <!--NOTICE CONTENT-->
+                <div class='col-12 help-table-content'>
+                    <div class="row">
+                        <div class='col-6 help-table-l'>
+                            <div>
+                                <div class="preface">
+                                    <span class='help-category'>앱기능</span>
+                                    <span class='help-num'>No. 685547</span>
+                                </div>
+                                <a href="help_write.html" class='help-content-title'>App이 Android KitKat 4.4에서 동작하지 않습니다.</a>
+                            </div>
+                        </div>
+                        <div class='col-2' class='help-id' style="display:flex; justify-content: center;">
+                            <span class='help-content-span' style="align-self:center;">Handsome.J</span>
+                        </div>
+                        <div class='col-2' class='help-date' style="display:flex; justify-content: center;">
+                            <span class='help-content-span' style="align-self:center;">1955-10-21</span>
+                        </div>
+                        <div class='col-2' class='help-answer' style="display:flex; justify-content: center;">
+                            <span class='help-content-span' style="align-self:center;">미답변</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--NOTICE CONTENT-->
+            </div>     
+            <!--NOTICE END--> 
+        </div>
+    </div>
+</div>
+<script src="js/common.js"></script>
+    <script src="js/notice.js"></script>
+</body>
+</html>

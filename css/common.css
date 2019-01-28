@@ -17,11 +17,14 @@ input[type=checkbox]
 .outer-container {
     max-width: 1440px;
     margin: 0 auto;
+    padding-right: 0;
+    box-shadow: 5px 0px 5px #ccc;
 }
 
 
 .header {
-    background-color: red;
+    border-bottom: 2px solid #ccc;
+    border-left: 1px solid #ccc;
 }
 
 
@@ -30,6 +33,7 @@ input[type=checkbox]
     justify-content: center;
     padding: 10px 0px;
 }
+
 
 .logo-box img {
     align-self: center;
@@ -47,10 +51,11 @@ input[type=checkbox]
 
 .side-nav {
     position: relative;
-    height: 100vh;
     padding: 20px 0px;
+    height:auto;
     text-align: center;
-    background-color:blue;
+    background-color: #eee;
+    border-left: 1px solid #ccc;
 }
 
 
@@ -67,4 +72,5 @@ input[type=checkbox]
 
 .main-box {
     padding:20px;
+    height:auto;
 }

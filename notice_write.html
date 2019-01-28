@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote-bs4.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote-bs4.js"></script>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/notice.css">
     <title>Document</title>
@@ -26,8 +30,8 @@
     <div class="row">
         <div class="col-2 side-nav">
             <ul class='side-nav-menu'>
-                <a href="#" class="side-nav-item"><li>공지사항</li></a>
-                <a href="#" class="side-nav-item"><li>1:1 문의</li></a>
+                <a href="notice.html" class="side-nav-item"><li>공지사항</li></a>
+                <a href="help.html" class="side-nav-item"><li>1:1 문의</li></a>
             </ul>
         </div>
         <div class="col-10 main-box">
@@ -45,29 +49,25 @@
                             <option value="이벤트">이벤트</option>
                             <option value="업데이트">업데이트</option>
                         </select>
-                        <div contenteditable="true" class='single-line'>
-                            제목
-                        </div>
-                    </div>
-                    <div class="pannel-box">
-                        <select name="" id="">
-                            <option value="">9</option>
-                        </select>
-                        <button type="button"><strong>B</strong></button>
-                        <button><span><i>&#8544;</i></span></button>
-                        <button><u>U</u></button>
-                        <button><s>T</s></button>
-                    </div>
-                    <div class="content-write-box" contenteditable="true" role="textbox" aria-multiline="true">
-
+                        <div contenteditable="true" placeholder="제목" class='single-line'></div>
                     </div>
                 </div>
+                <div id='summernote' class='col-12'></div>
             </div> 
             <a href='#' class='write-btn'>글쓰기</a>
         <!--NOTICE END--> 
         </div>
     </div>
 </div>
+    <script src="js/common.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script>
+        $('#summernote').summernote({
+            placeholder: '내용을 입력하세요.',
+            tabsize: 1,
+            width: 100+'%',
+            height: 800
+        });
+    </script>
 </body>
 </html>
