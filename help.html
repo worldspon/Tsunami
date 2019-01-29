@@ -15,7 +15,7 @@
 <div class="container-fluid outer-container">
     <div class="row header">
         <div class='col-lg-2 logo-box'>
-            <img src="image/logo.png" alt="">
+            <a href="notice.html"><img src="image/logo.png" alt=""></a>
         </div>
         <div class='col-lg-8'>
         </div>
@@ -54,17 +54,15 @@
                             <a href="">기타</a>
                         </li>
                     </ul>
-                    <div class='serch-box'>
-                        <form action="">
-                            <select style="height:30px;">
-                                <option value="제목">제목</option>
-                                <option value="아이디">아이디</option>
-                                <option value="상담번호">상담번호</option>
-                                <option value="상담분류">상담분류</option>
-                            </select>
-                            <input type="text">
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                        </form>
+                    <div class='help-serch-box'>
+                        <select class='help-select'>
+                            <option value="제목">제목</option>
+                            <option value="아이디">아이디</option>
+                            <option value="상담번호">상담번호</option>
+                            <option value="상담분류">상담분류</option>
+                        </select>
+                        <input type="text" class='help-input'>
+                        <button type="submit" class='help-search-btn'><i class="fa fa-search"></i></button>
                     </div>
                 </div>
                 <!--NOTICE TITLE-->
@@ -90,14 +88,14 @@
                                 <a href="help_write.html" class='help-content-title'>App이 Android KitKat 4.4에서 동작하지 않습니다.</a>
                             </div>
                         </div>
-                        <div class='col-2' class='help-id' style="display:flex; justify-content: center;">
-                            <span class='help-content-span' style="align-self:center;">Handsome.J</span>
+                        <div class='col-2 help-id help-table-inner'>
+                            <span class='help-content-span'>Handsome.J</span>
                         </div>
-                        <div class='col-2' class='help-date' style="display:flex; justify-content: center;">
-                            <span class='help-content-span' style="align-self:center;">1955-10-21</span>
+                        <div class='col-2 help-date help-table-inner'>
+                            <span class='help-content-span'>1955-10-21</span>
                         </div>
-                        <div class='col-2' class='help-answer' style="display:flex; justify-content: center;">
-                            <span class='help-content-span' style="align-self:center;">미답변</span>
+                        <div class='col-2 help-answer help-table-inner'>
+                            <span class='help-content-span'>미답변</span>
                         </div>
                     </div>
                 </div>
@@ -123,7 +121,7 @@
         </div>
     </div>
 </div>
-<script src="js/common.js"></script>
+    <script src="js/common.js"></script>
     <script src="js/notice.js"></script>
 </body>
 </html>

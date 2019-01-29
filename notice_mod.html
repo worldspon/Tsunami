@@ -18,7 +18,7 @@
 <div class="container-fluid outer-container">
     <div class="row header">
         <div class='col-lg-2 logo-box'>
-            <img src="image/logo.png" alt="">
+            <a href="notice.html"><img src="image/logo.png" alt=""></a>
         </div>
         <div class='col-lg-8'>
         </div>
@@ -44,7 +44,7 @@
             <div class='row'>
                 <div class="col-12 notice-mod-write-box">
                     <div class='notice-mod-title-write-box'>
-                        <select name="" id="">
+                        <select class='notice-mod-title-select'>
                             <option value="공지사항">공지사항</option>
                             <option value="이벤트">이벤트</option>
                             <option value="업데이트">업데이트</option>
@@ -52,7 +52,7 @@
                         <div contenteditable="true" class='single-line'>1/28(월) 불법 프로그램 사용자 조치 안내</div>
                     </div>
                 </div>
-                <div id='summernote' class='col-12'>
+                <div id='summernote' class='col-12 notice-mod-content'>
                     <p>불법프로그램 나빠요</p>
                 </div>
             </div> 
@@ -68,7 +68,6 @@
     <script src="js/bootstrap.js"></script>
     <script>
         $('#summernote').summernote({
-            placeholder: '내용을 입력하세요.',
             tabsize: 1,
             width: 100+'%',
             height: 800

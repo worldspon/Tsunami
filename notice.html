@@ -15,7 +15,7 @@
 <div class="container-fluid outer-container">
     <div class="row header">
         <div class='col-lg-2 logo-box'>
-            <img src="image/logo.png" alt="">
+            <a href="notice.html"><img src="image/logo.png" alt=""></a>
         </div>
         <div class='col-lg-8'>
         </div>
@@ -51,7 +51,7 @@
                             <a href="">패치</a>
                         </li>
                     </ul>
-                    <div class='confirm-box'>
+                    <div class='notice-confirm-box'>
                         <a href='#' class='notice-true-btn notice-btn'>확인</a>
                         <a href='#' class='notice-false-btn notice-btn'>취소</a>
                     </div>
@@ -67,6 +67,7 @@
                 </div>
                 <!--NOTICE CONTENT TITLE-->
                 <!--NOTICE CONTENT-->
+<!----------------------------------공지사항 게시글 / 반복구간 / ------------------------------------------------>
                 <div class='col-12 notice-table-content'>
                     <div class="row">
                         <div class='col-10 notice-table-l'>
@@ -79,28 +80,12 @@
                                 <a href="notice_table.html" class='content-title'>1/31(목) 캐릭터 밸런스 및 대전 개편사항 사전 안내</a>
                             </div>
                         </div>
-                        <div class='col-2' class='notice-date' style="display:flex; justify-content: center;">
-                            <span class='date-span' style="align-self:center;">2018-01-01</span>
+                        <div class='col-2 notice-date'>
+                            <span class='date-span'>2018-01-01</span>
                         </div>
                     </div>
                 </div>
-                <div class='col-12 notice-table-content'>
-                    <div class="row">
-                        <div class='col-10 notice-table-l'>
-                            <input type="checkbox" class='notice-mod-chk'>
-                            <div>
-                                <div class="preface">
-                                    <span class='notice-category'>공지</span>
-                                    <span class='notice-num'>No. 1234567</span>
-                                </div>
-                                <a href="" class='content-title'>1/31(목) 캐릭터 밸런스 및 대전 개편사항 사전 안내</a>
-                            </div>
-                        </div>
-                        <div class='col-2' class='notice-date' style="display:flex; justify-content: center;">
-                            <span class='date-span' style="align-self:center;">2018-01-01</span>
-                        </div>
-                    </div>
-                </div>
+<!----------------------------------공지사항 게시글 / 반복구간 / ------------------------------------------------>
                 <!--NOTICE CONTENT-->
             </div>
             <div class='col-12 notice-page-box'>
@@ -122,14 +107,12 @@
 
             <div class="col-12 notice-serch-box-wrap">
                 <div class='notice-serch-box'>
-                    <form action="">
-                        <select style="height:30px; padding:0 10px;">
-                            <option value="제목">제목</option>
-                            <option value="내용">내용</option>
-                        </select>
-                        <input type="text" style="width:250px;">
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                    </form>
+                    <select class='search-select-box'>
+                        <option value="제목">제목</option>
+                        <option value="내용">내용</option>
+                    </select>
+                    <input type="text" class='search-input'>
+                    <button type="submit"><i class="fa fa-search"></i></button>
                 </div>
             </div>
             <!--NOTICE END--> 

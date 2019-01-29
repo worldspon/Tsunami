@@ -1,5 +1,5 @@
 const mod_btn = document.querySelector('.notice-mod-btn');
-const confirm_btn = document.querySelector('.confirm-box');
+const confirm_btn = document.querySelector('.notice-confirm-box');
 const mod_true_btn = document.querySelector('.notice-false-btn');
 const mod_false_btn = document.querySelector('.notice-false-btn');
 const mod_chk = document.querySelectorAll('.notice-mod-chk');

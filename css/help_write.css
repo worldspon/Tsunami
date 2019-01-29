@@ -1,0 +1,136 @@
+.help-answer-title {
+    display: flex;
+    align-items: flex-end;
+    padding:0;
+    border-bottom: 2px solid #acacac; 
+}
+
+.help-answer-title h1, .help-answer-title ul {
+    display: inline-block;
+}
+
+.help-answer-title ul {
+    margin-left: 15px;
+}
+
+.help-answer-title ul li {
+    float: left;
+    margin-bottom: -5px;
+}
+
+
+.help-answer-title ul li:not(:last-child)::after {
+    float: right;
+    content: '';
+    width: 1px;
+    height: 12px;
+    margin: 7px 10px 0 10px;
+    background: #989898;
+}
+
+
+.help-answer-btn {
+    display: inline-block;
+    border-radius: 5px;
+    right:0;
+    padding: 10px 15px;
+    color:black;
+    font-weight: bold;
+    background-color:#eee;
+    margin-top: 10px;
+}
+
+
+.help-answer-list-btn {
+    margin-left: auto;
+    margin-bottom: 5px;
+}
+
+.help-inner-title {
+    padding: 20px 0px;
+    border-bottom: 2px solid #eee;
+}
+
+.help-inner-prefix {
+    font-size: 1rem;
+    color:#888; 
+}
+
+.help-inner-title-content {
+    font-size: 2rem;
+}
+
+.help-inner-id, .help-inner-date {
+    display:block;
+    text-align: center;
+}
+
+.help-inner-id {
+    font-size: 1.5rem;
+}
+
+.help-inner-date {
+    font-size: 1rem;
+}
+
+.help-inner-content {
+    padding: 30px;
+    border-bottom: 2px solid #acacac;
+}
+
+
+
+.help-inner-answer-title {
+    padding: 20px 0px;
+    border-bottom: 2px solid #eee;
+}
+
+.help-inner-answer-prefix {
+    font-size: 1rem;
+    color:#888; 
+}
+
+.help-inner-answer-title-content {
+    font-size: 2rem;
+}
+
+.help-inner-answer-id, .help-inner-answer-date {
+    display:block;
+    text-align: center;
+}
+
+.help-inner-answer-id {
+    font-size: 1.5rem;
+}
+
+.help-inner-answer-date {
+    font-size: 1rem;
+}
+
+.help-inner-answer-content {
+    padding: 30px;
+    border-bottom: 2px solid #acacac;
+}
+
+
+
+.help-answer-write-box {
+    margin-top: 30px;
+    padding:0;
+}
+
+
+.help-answer-write-title-box {
+    display:flex;
+    align-items:center;
+    height:50px;
+    padding:0 5px;
+    border: 1px solid #a9a9a9;
+    border-bottom: none;
+    background-color: #f8f8f8;
+}
+
+
+.help-answer-btn-box {
+    text-align: right;
+}

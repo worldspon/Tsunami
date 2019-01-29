@@ -14,10 +14,42 @@ input[type=checkbox]
   -o-transform: scale(2); /* Opera */
 }
 
+[contenteditable]:focus {
+    outline: 0px solid transparent;
+}
+
+[contenteditable="true"].single-line {
+    white-space: nowrap;
+    width:100%;
+    overflow: hidden;
+} 
+[contenteditable="true"].single-line br {
+    display:none;
+
+}
+[contenteditable="true"].single-line * {
+    display:inline;
+    white-space:nowrap;
+}
+
+
+.single-line {
+    display:inline-block;
+    margin-left: 10px;
+    padding-left: 5px;
+    border: 1px solid #888;
+    background-color: white;
+}
+
+.single-line[placeholder]:empty:before {
+    content: attr(placeholder);
+    color: #555; 
+}
+
 .outer-container {
     max-width: 1440px;
     margin: 0 auto;
-    padding-right: 0;
+    padding: 0;
 
 }
 
