@@ -7,6 +7,7 @@
 
 .notice-table-title-btn-box {
     margin-left: auto;
+    margin-bottom: 0.5rem;
 }
 
 .notice-table-btn {
@@ -24,13 +25,22 @@
     border-bottom: 2px solid #eee;
 }
 
+.notice-table-inner-title .row > div {
+    display:flex;
+    align-items: center;
+}
+
+.notice-table-inner-title .row > div:last-child  {
+    flex-direction: column;
+}
+
 .notice-table-inner-prefix {
     font-size: 1rem;
     color:#888; 
 }
 
 .notice-table-inner-title-content {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .notice-table-inner-id, .notice-table-inner-date {

@@ -1,3 +1,11 @@
+html {
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
 a {text-decoration: none; color:black;}
 a:hover {text-decoration: none; color:black;}
 .row {

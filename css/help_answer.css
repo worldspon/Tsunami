@@ -57,7 +57,7 @@
 }
 
 .help-inner-title-content {
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .help-inner-id, .help-inner-date {
@@ -66,7 +66,10 @@
 }
 
 .help-inner-id {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    overflow:hidden;
+    text-overflow:ellipsis
+    
 }
 
 .help-inner-date {
@@ -91,7 +94,7 @@
 }
 
 .help-inner-answer-title-content {
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .help-inner-answer-id, .help-inner-answer-date {

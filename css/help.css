@@ -122,3 +122,17 @@
 .help-page-list img {
     width: 30px;
 }
+
+
+@media screen and (max-width:650px) {
+    .help-input {
+        width:120px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .help-page-list > li {
+        width: 40px;
+
+    }
+}
