@@ -124,12 +124,16 @@
     font-size: 1rem;
 }
 
-.help-inner-answer-mod, .help-inner-answer-title {
-    font-size: 0.8rem;
+.help-inner-answer-mod, .help-inner-answer-del {
+    font-size: 1rem;
 }
 
-.help-inner-answer-mod a:hover, .help-inner-answer-title a:hover {
+.help-inner-answer-mod a:hover, .help-inner-answer-del a:hover {
     color:blue;
+}
+
+.help-inner-answer-del {
+    margin-left: 8px;
 }
 
 .help-inner-answer-content {
