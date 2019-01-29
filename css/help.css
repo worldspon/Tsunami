@@ -24,13 +24,13 @@
     content: '';
     width: 1px;
     height: 12px;
-    margin: 7px 10px 0 10px;
+    margin: 5px 10px 0 10px;
     background: #989898;
 }
 
 .help-serch-box {
     clear: both;
-    display:block;
+    display:flex;
     margin-left:auto;
     margin-bottom: 5px;
 }
@@ -130,9 +130,22 @@
     }
 }
 
+@media screen and (max-width: 560px) {
+    .help-title ul li:not(:last-child)::after {
+        margin: 4px 5px 0 5px;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .help-page-list > li {
         width: 40px;
-
+    }
+    .help-serch-box {
+        flex-direction: column;
+    }
+    .help-title ul li:not(:last-child)::after {
+        margin: 4px 2px 0 2px;
     }
 }
+
+
