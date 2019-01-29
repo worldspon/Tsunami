@@ -51,6 +51,11 @@
     border-bottom: 2px solid #eee;
 }
 
+.help-inner-title .row > div:first-child {
+    display: flex;
+    align-items: center;
+}
+
 .help-inner-prefix {
     font-size: 1rem;
     color:#888; 
@@ -88,6 +93,15 @@
     border-bottom: 2px solid #eee;
 }
 
+.help-inner-answer-title .row > div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.help-inner-answer-title .row > div:last-child {
+    text-align: center;
+}
+
 .help-inner-answer-prefix {
     font-size: 1rem;
     color:#888; 
@@ -110,11 +124,18 @@
     font-size: 1rem;
 }
 
+.help-inner-answer-mod, .help-inner-answer-title {
+    font-size: 0.8rem;
+}
+
+.help-inner-answer-mod a:hover, .help-inner-answer-title a:hover {
+    color:blue;
+}
+
 .help-inner-answer-content {
     padding: 30px;
     border-bottom: 2px solid #acacac;
 }
-
 
 
 .help-answer-write-box {
@@ -136,4 +157,17 @@
 
 .help-answer-btn-box {
     text-align: right;
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    .help-inner-title .row > div:first-child {
+        display: block;
+    }
+    
+    .help-inner-answer-title .row > div:first-child {
+        display: block;
+    }
 }

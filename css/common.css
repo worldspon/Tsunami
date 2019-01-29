@@ -158,6 +158,10 @@ input[type=checkbox]
         font-size: 12px;
     }
 
+    .side-nav {
+        padding: 10px 0px;
+    }
+
     .side-nav-menu {
         margin:10px 0px;
     }
