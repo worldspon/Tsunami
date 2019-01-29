@@ -5,6 +5,10 @@ a:hover {text-decoration: none; color:black;}
     margin:0;
 }
 
+.word-block {
+    display:inline-block;
+}
+
 input[type=checkbox]
 {
   /* Double-sized Checkboxes */
@@ -50,7 +54,6 @@ input[type=checkbox]
     max-width: 1440px;
     margin: 0 auto;
     padding: 0;
-
 }
 
 
@@ -122,6 +125,36 @@ input[type=checkbox]
 
 
 .main-box {
-    padding:20px;
+    padding-top:20px;
     height:auto;
+}
+
+@media screen and (max-width: 1440px) {
+    .outer-container {
+        width:100%;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .logo-box {
+        padding:10px;
+    }
+    .logo-box img {
+        width:100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+
+    .side-nav-menu {
+        margin:10px 0px;
+    }
+
+    .side-nav-item {
+        line-height: 1;
+    }
 }

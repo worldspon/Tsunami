@@ -52,10 +52,14 @@
     clear: both;
     display:none;
     margin-left:auto;
-    margin-bottom: 15px;
+}
+
+.notice-confirm-box a:last-child {
+    margin-left: 5px;
 }
 
 .notice-btn {
+    display: inline-block;
     border-radius: 5px;
     margin-bottom: 5px;
     padding:10px 15px;
@@ -129,6 +133,7 @@
 .notice-date {
     display:flex;
     justify-content: center;
+    text-align: center;
 }
 
 .date-span {
@@ -188,4 +193,25 @@
 .search-input {
     margin-left:5px;
     width:250px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .notice-confirm-box a:last-child {
+        margin-left: 0px;
+    }
+    .notice-page-list {
+        margin: 0;
+        margin-right:auto;
+    }
+    .notice-page-list > li {
+        display: inline-block;
+        width: 25px;
+        font-size: 1.2rem;
+        text-align: center;
+        cursor: pointer;
+    }
+    .notice-page-list img {
+        width: 100%;
+    }
 }
